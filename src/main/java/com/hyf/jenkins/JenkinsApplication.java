@@ -23,7 +23,7 @@ public class JenkinsApplication
         @RequestMapping("/hello")
         public String hello() {
             System.out.println("hello");
-            return "hello3";
+            return "hello4";
         }
     }
 
