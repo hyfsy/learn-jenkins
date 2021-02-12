@@ -21,6 +21,7 @@ pipeline {
                 echo "start deploy"
                 deploy adapters: [tomcat8(credentialsId: '607821d0-0267-43ad-b4ff-5aa5c9272aa0', path: '', url: 'http://192.168.190.188:8040/')], contextPath: '/learn-jenkins${path_version}', war: 'target/*.war'
                 echo "deploy success!!!"
+                echo "${path_version}!!!!"
             }
         }
     }
