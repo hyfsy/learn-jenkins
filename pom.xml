@@ -41,7 +41,8 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <!-- 将单元测试结果生成为html形式的界面 -->
+            <!-- 将单元测试结果生成为xml文件，方便处理为可视化界面 -->
+            <!-- Jenkins Junit Plugin插件自动处理了，所以此处不需要引入 -->
             <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
