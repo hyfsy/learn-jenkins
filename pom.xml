@@ -41,6 +41,17 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <!-- 将单元测试结果生成为html形式的界面 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <includes>
+                        <include>**/*.java</include>
+                    </includes>
+                    <!--<testFailureIgnore>true</testFailureIgnore>-->
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
